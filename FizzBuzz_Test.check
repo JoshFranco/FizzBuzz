@@ -2,3 +2,4 @@
 
 #test FizzBuzz_Test
 	fail_unless(fizzbuzz(1) == 1, "When fizzbuzz is passed a number it does not return that number");
+	fail_unless(fizzbuzz(2) == 2, "when fizbuzz is passed a two it does not return a two");
