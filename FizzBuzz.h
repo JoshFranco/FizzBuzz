@@ -1,6 +1,6 @@
 #ifndef FIZZBUZZ_H
 #define FIZZBUZZ_H
 
-int fizzbuzz(int x);
+char fizzbuzz(int x);
 
 #endif

@@ -1,5 +1,5 @@
 #include "FizzBuzz.h"
 
-int fizzbuzz(int x){
+char fizzbuzz(int x){
 	return x;
 }
