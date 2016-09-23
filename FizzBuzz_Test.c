@@ -8,11 +8,18 @@
 #line 1 "FizzBuzz_Test.check"
 #include "FizzBuzz.h"
 
-START_TEST(FizzBuzz_Test)
+START_TEST(WhenFizzBuzzIsPassedaNumberItReturnsThatNumber)
 {
 #line 4
-	fail_unless(fizzbuzz(1) == 1, "fizzbuzz is broke yo");
-	fail_unless(fizzbuzz(1) == 2, "fizzbuzz is broke yo");
+	fail_unless(fizzbuzz(1) == 1, "When fizzbuzz is passed a number it does not return that number");
+}
+END_TEST
+
+START_TEST(WhenFizzBuzzIsPassedATwoItReturnsATwo)
+{
+#line 6
+	fail_unless(fizzbuzz(2) == 2, "when fizzbuzz is passed a two it does not return a two");
+	
 }
 END_TEST
 
@@ -24,7 +31,8 @@ int main(void)
     int nf;
 
     suite_add_tcase(s1, tc1_1);
-    tcase_add_test(tc1_1, FizzBuzz_Test);
+    tcase_add_test(tc1_1, WhenFizzBuzzIsPassedaNumberItReturnsThatNumber);
+    tcase_add_test(tc1_1, WhenFizzBuzzIsPassedATwoItReturnsATwo);
 
     srunner_run_all(sr, CK_ENV);
     nf = srunner_ntests_failed(sr);

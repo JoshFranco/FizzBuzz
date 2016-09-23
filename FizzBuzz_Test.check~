@@ -2,6 +2,5 @@
 
 #test WhenFizzBuzzIsPassedaNumberItReturnsThatNumber
 	fail_unless(fizzbuzz(1) == 1, "When fizzbuzz is passed a number it does not return that number");
-#test WhenFizzBuzzIsPassedATwoItReturnsATwo
 	fail_unless(fizzbuzz(2) == 2, "when fizzbuzz is passed a two it does not return a two");
 	
