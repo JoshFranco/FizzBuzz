@@ -1,0 +1,5 @@
+#include "FizzBuzz.h"
+
+#test FizzBuzz_Test
+	fail_unless(fizzbuzz(1) == 1, "fizzbuzz is broke yo");
+	fail_unless(fizzbuzz(1) == 2, "fizzbuzz is broke yo");
