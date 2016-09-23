@@ -1,5 +1,0 @@
-#include "FizzBuzz.h"
-
-char fizzbuzz(char x){
-	return x;
-}
