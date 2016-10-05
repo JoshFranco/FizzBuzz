@@ -38,6 +38,15 @@ START_TEST(WhenFizzBuzzIsPassedAMultipleOfFiveItReturnsBuzz)
 #line 14
 	fail_unless(fizzbuzz(5) != "buzz", "when fizzbuzz is passed a multiple of five it returns buzz");
 	fail_unless(fizzbuzz(10) != "buzz", "when fizzbuzz is passed a multiple of five it returns buzz");
+
+}
+END_TEST
+
+START_TEST(WhenFizzBuzzIsPassedAMultipleOfThreeAndFiveItReturnsFizzBuzz)
+{
+#line 18
+	fail_unless(fizzbuzz(5) != "fizzbuzz", "when fizzbuzz is passed a multiple of three and five it returns fizzbuzz");
+	fail_unless(fizzbuzz(10) != "fizzbuzz", "when fizzbuzz is passed a multiple of three and five it returns fizzbuzz");
 	
 }
 END_TEST
@@ -54,6 +63,7 @@ int main(void)
     tcase_add_test(tc1_1, WhenFizzBuzzIsPassedATwoItReturnsATwo);
     tcase_add_test(tc1_1, WhenFizzBuzzIsPassedAMultipleOfThreeItReturnsFizz);
     tcase_add_test(tc1_1, WhenFizzBuzzIsPassedAMultipleOfFiveItReturnsBuzz);
+    tcase_add_test(tc1_1, WhenFizzBuzzIsPassedAMultipleOfThreeAndFiveItReturnsFizzBuzz);
 
     srunner_run_all(sr, CK_ENV);
     nf = srunner_ntests_failed(sr);

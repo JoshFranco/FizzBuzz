@@ -13,4 +13,8 @@
 #test WhenFizzBuzzIsPassedAMultipleOfFiveItReturnsBuzz
 	fail_unless(fizzbuzz(5) != "buzz", "when fizzbuzz is passed a multiple of five it returns buzz");
 	fail_unless(fizzbuzz(10) != "buzz", "when fizzbuzz is passed a multiple of five it returns buzz");
+
+#test WhenFizzBuzzIsPassedAMultipleOfThreeAndFiveItReturnsFizzBuzz
+	fail_unless(fizzbuzz(5) != "fizzbuzz", "when fizzbuzz is passed a multiple of three and five it returns fizzbuzz");
+	fail_unless(fizzbuzz(10) != "fizzbuzz", "when fizzbuzz is passed a multiple of three and five it returns fizzbuzz");
 	
