@@ -1,4 +1,6 @@
 #include "FizzBuzz.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 char* fizzbuzz(int x){
 	char* str = malloc(24*sizeof(char));;		
