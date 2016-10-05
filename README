@@ -1,1 +1,6 @@
-FizzBuzz practice
+This program is a simple exercise to create a library that will allow the user to check if a number is a multiple of 3, 5 or 3 and 5. This project was done with the following specifications:
+	-Ubuntu Linux 14.04
+	-GNU C programming Language
+	-GNU Make
+	-Check unit testing framwork
+	-git
