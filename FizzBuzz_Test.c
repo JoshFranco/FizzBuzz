@@ -8,45 +8,53 @@
 #line 1 "FizzBuzz_Test.check"
 #include "FizzBuzz.h"
 
+int match;
+
 START_TEST(WhenFizzBuzzIsPassedaNumberItReturnsThatNumber)
 {
-#line 4
-	fail_unless(fizzbuzz(1) != 1, "When fizzbuzz is passed a number it does not return that number");
+#line 6
+	match = strcmp(fizzbuzz(1),"1");
+	fail_unless(match == 0, "When fizzbuzz is passed a number it does not return that number");
 
 }
 END_TEST
 
 START_TEST(WhenFizzBuzzIsPassedATwoItReturnsATwo)
 {
-#line 7
-	fail_unless(fizzbuzz(2) != 2, "when fizzbuzz is passed a two it does not return a two");
+#line 10
+	match = strcmp(fizzbuzz(2),"2");	
+	fail_unless(match == 0, "when fizzbuzz is passed a two it does not return a two");
 
 }
 END_TEST
 
 START_TEST(WhenFizzBuzzIsPassedAMultipleOfThreeItReturnsFizz)
 {
-#line 10
-	fail_unless(fizzbuzz(3) != "fizz", "when fizzbuzz is passed a multiple of three it returns fizz");
-	fail_unless(fizzbuzz(6) != "fizz", "when fizzbuzz is passed a multiple of three it returns fizz");
+#line 14
+	match = strcmp(fizzbuzz(3),"fizz");	
+	fail_unless(match == 0, "when fizzbuzz is passed a multiple of three it returns fizz");
+	match = strcmp(fizzbuzz(6),"fizz");
+	fail_unless(match == 0, "when fizzbuzz is passed a multiple of three it returns fizz");
 
 }
 END_TEST
 
 START_TEST(WhenFizzBuzzIsPassedAMultipleOfFiveItReturnsBuzz)
 {
-#line 14
-	fail_unless(fizzbuzz(5) != "buzz", "when fizzbuzz is passed a multiple of five it returns buzz");
-	fail_unless(fizzbuzz(10) != "buzz", "when fizzbuzz is passed a multiple of five it returns buzz");
+#line 20
+	match = strcmp(fizzbuzz(5),"buzz");	
+	fail_unless(match == 0, "when fizzbuzz is passed a multiple of five it returns buzz");
+	match = strcmp(fizzbuzz(10),"buzz");	
+	fail_unless(match == 0, "when fizzbuzz is passed a multiple of five it returns buzz");
 
 }
 END_TEST
 
 START_TEST(WhenFizzBuzzIsPassedAMultipleOfThreeAndFiveItReturnsFizzBuzz)
 {
-#line 18
-	fail_unless(fizzbuzz(5) != "fizzbuzz", "when fizzbuzz is passed a multiple of three and five it returns fizzbuzz");
-	fail_unless(fizzbuzz(10) != "fizzbuzz", "when fizzbuzz is passed a multiple of three and five it returns fizzbuzz");
+#line 26
+	match = strcmp(fizzbuzz(15),"fizzbuzz");		
+	fail_unless(match == 0, "when fizzbuzz is passed a multiple of three and five it returns fizzbuzz");
 	
 }
 END_TEST
